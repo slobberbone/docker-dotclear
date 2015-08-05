@@ -17,5 +17,5 @@ Usage
 
 Just start the image
 ```
-docker run -p 80:80 -v /my_host_dotclear_directory:/var/www/html/ slobberbone/docker-dotclear
+docker run -p 80:80 -v /my_host_dotclear_directory:/var/www/html/ --name dotclear slobberbone/docker-dotclear
 ```
