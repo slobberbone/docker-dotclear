@@ -16,7 +16,7 @@ WORKDIR /var/www/html/
 RUN rm index.html
 RUN wget http://download.dotclear.net/latest.zip
 RUN unzip latest.zip
-RUN mv -R dotclear/* /var/www/html/
+RUN mv -f dotclear/* /var/www/html/
 RUN rm -Rf dotclear latest.zip
 RUN chown -R www-data .
 RUN apt-get remove -y wget
